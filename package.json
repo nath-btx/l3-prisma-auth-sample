@@ -1,0 +1,42 @@
+{
+  "name": "@kamecraft/sanji",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": ".dist/main",
+  "scripts": {
+    "dev": "yarn nodemon",
+    "lint": "yarn eslint src/**/*.ts",
+    "build": "yarn babel src/ --out-dir .dist/ --quiet"
+  },
+  "engines": {
+    "node": ">=15.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "dependencies": {
+    "@prisma/client": "2.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "date-fns": "^2.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "prisma": "2.18.0",
+    "uuid": "^7.0.2"
+  }
+}
